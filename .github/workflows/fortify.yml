@@ -48,7 +48,7 @@ jobs:
           FCLI_DEFAULT_TOKEN_EXPIRE: "1h"
           FCLI_EXECUTABLE_LOCATION: .
         with:
-          ssc_base_url: ${{ vars.FTFY_SSC_BASE_URL}}
+          ssc_base_url: ${{ secrets.FTFY_SSC_BASE_URL}}
           ssc_app: ${{ env.APPLICATION }}
           ssc_version: ${{ env.VERSION }}
           # ssc_source_version: ${{ github.event.repository.default_branch }}
